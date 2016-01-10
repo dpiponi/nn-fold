@@ -229,11 +229,11 @@ expressions to around 10% accuracy. For example here are the last
 (((0+(0*(0+1)))+((1*1)+0))*0) 0.0 2.498359802964492e-2
 (((0+0)+(0+(0+0)))*(0*(1*1))) 0.0 -3.0017865824681578e-2
 
-Try replacing eval1 with eval2 or eval3 or using tanh instead of
+Try replacing `eval1` with `eval2` or `eval3` or using tanh instead of
 relu.
 
 It's easy to make small changes that break things. For example if
-you make eval2 One equal -0.3 then Times allows you to construct
+you make `eval2 One` equal -0.3 then `Times` allows you to construct
 expressions with a small denominator and hence make wildly varying
 values. It's hard to learn in this case.
 
