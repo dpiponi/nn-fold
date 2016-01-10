@@ -35,8 +35,8 @@ Some elementary linear algebra.
 > multMV :: Num a => V.Vector (V.Vector a) -> V.Vector a -> V.Vector a
 > multMV a x = V.fromList [dot r x | r <- V.toList a]
 
-The type ArithNet is used to represent the weights in our net. zero
-represents the 'value' of the Zero symbol, times is a matrix which you
+The type ArithNet is used to represent the weights in our net. `zero`
+represents the 'value' of the Zero symbol, `times` is a matrix which you
 can think of as a fully connected layer designed to represent the action
 of Times and so on.
 
